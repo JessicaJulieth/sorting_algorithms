@@ -1,9 +1,11 @@
 #include "sort.h"
 
-/*
+/**
  * bubble_sort - sort the array of elements from linked list
- * @array:
+ * @array: array to sort
+ * @size: the size of the array to sort
  *
+ * Return: none
 */
 
 void bubble_sort(int *array, size_t size)
@@ -13,7 +15,7 @@ void bubble_sort(int *array, size_t size)
 	if (array == NULL || size < 2)
 		return;
 
-    while (x < size)
+	while (x < size)
 	{
 		for (y = 0; y < size - 1; y++)
 		{
@@ -25,6 +27,6 @@ void bubble_sort(int *array, size_t size)
 				print_array(array, size);
 			}
 		}
-        x++;
+		x++;
 	}
 }
