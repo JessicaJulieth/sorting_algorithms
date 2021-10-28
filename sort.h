@@ -1,5 +1,5 @@
 #ifndef Sort_h
-#define Sort_h 
+#define Sort_h
 /* Library for sorting */
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,9 +14,9 @@
  */
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
 /* Prototypes of the list */
