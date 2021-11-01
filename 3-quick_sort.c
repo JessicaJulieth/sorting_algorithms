@@ -16,7 +16,8 @@ void quick_sort_2(int *Init_array, size_t Init_size, int *Array, size_t Size)
 
 	if (Array && Size > 1)
 	{
-        while(x = 0, x < Size - 1)
+		x = 0;
+		while (x < Size - 1)
 		{
 			if (Array[x] < Pivot)
 			{
@@ -30,7 +31,7 @@ void quick_sort_2(int *Init_array, size_t Init_size, int *Array, size_t Size)
 					print_array(Init_array, Init_size);
 				}
 			}
-        x++;
+			x++;
 
 		}
 		temp_2 = Size;
